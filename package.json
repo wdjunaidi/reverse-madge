@@ -1,0 +1,14 @@
+{
+  "name": "reverse-madge",
+  "version": "1.0.0",
+  "description": "Tools to reverse data from madge json output from depend on to depended by",
+  "main": "reverse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ramda": "^0.21.0"
+  }
+}
