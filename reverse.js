@@ -1,6 +1,8 @@
 const fs  = require('fs');
 const R = require('ramda');
 
+let stringify = R.curry(JSON.stringify)(R.__, null, 2);
+
 if (process.argv[2]) {
   fs.readFile(process.argv[2], 'utf-8', (err, data) => {
     if (err) {
@@ -10,7 +12,7 @@ if (process.argv[2]) {
       JSON.parse,
       reverse,
       destructure,
-      JSON.stringify,
+      stringify,
       console.log)(data);
   });
 }
